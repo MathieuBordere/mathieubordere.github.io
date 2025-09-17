@@ -20,6 +20,8 @@ body {
 .main-content {
   margin-left: 240px;
   padding: 20px;
+  max-width: 1200px;
+  margin-right: auto;
 }
 
 /* Code blocks */
@@ -384,7 +386,9 @@ body {
 
   .main-content {
     margin-left: 0;
+    margin-right: 0;
     padding-top: 70px;
+    max-width: none;
   }
 
   /* Ensure proper title spacing on mobile */
