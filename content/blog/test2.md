@@ -1,6 +1,6 @@
 +++
-title = "My 2nd post"
-date = 2019-11-27
+title = "My post from the future."
+date = 2026-11-27
 +++
 
-This is my 2nd blog post.
+This is my 2nd blog post, and it's pretty special.

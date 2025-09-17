@@ -4,11 +4,14 @@
 <h1 class="title">
   {{ section.title }}
 </h1>
-<ul>
-  <!-- If you are using pagination, section.pages will be empty.
-       You need to use the paginator object -->  
+<div class="blog-posts">
   {% for page in section.pages %}
-  <li><a href="{{ page.permalink | safe }}">{{ page.title }}</a></li>
+  <div class="blog-post-row {% if loop.index is odd %}odd{% else %}even{% endif %}">
+    <a href="{{ page.permalink | safe }}" class="blog-post-link">
+      <div class="blog-post-title">{{ page.title }}</div>
+      <div class="blog-post-date">{{ page.date | date(format="%Y-%m-%d") }}</div>
+    </a>
+  </div>
   {% endfor %}
-</ul>
+</div>
 {% endblock content %}

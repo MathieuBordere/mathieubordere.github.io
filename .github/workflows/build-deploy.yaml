@@ -8,9 +8,12 @@ jobs:
     steps:
       - name: checkout
         uses: actions/checkout@v5
+      - name: fill out timezone
+        run: |
+          sed -i "s/##TIMEZONE##/$(date +%Z)/g" templates/*.html
       - name: build_and_deploy
         uses: shalzz/zola-deploy-action@master
         env:
           # Target branch
-          PAGES_BRANCH: main
+          PAGES_BRANCH: gh-pages
           TOKEN: ${{ secrets.GITHUB_TOKEN }}
