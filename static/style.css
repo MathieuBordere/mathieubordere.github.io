@@ -18,9 +18,9 @@ body {
 }
 
 .main-content {
-  margin-left: max(240px, calc((50vw - 120px) - 200px));
+  margin-left: max(240px, calc(240px + (100vw - 940px)/2));
   padding: 20px;
-  max-width: 800px;
+  max-width: 700px;
 }
 
 /* Code blocks */
