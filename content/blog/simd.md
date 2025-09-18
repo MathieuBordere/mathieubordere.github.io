@@ -58,8 +58,8 @@ bits of the data at L21 and compares the data with the buffer of newlines using
 1's in case a data byte is a newline or all 0's in case it's not.
 
 To count the number of lines, `_mm256_movemask_epi8` creates a mask from the most significant bit of each
-byte of the source vector and stores the result in the returned value, in short it transforms `1111 1111` (a newline match)
-into `1000 0000`, and leaves `0000 0000` alone. Now what remains is counting the
+byte of the source vector and stores the result in the returned value, in short it transforms `11111111` (a newline match)
+into `10000000`, and leaves `00000000` alone. Now what remains is counting the
 number of set bits in the mask with `__builtin_popcount`.
 
 That's it! The remainder is some accounting when there's leftover data that is
