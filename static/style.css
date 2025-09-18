@@ -410,4 +410,15 @@ body {
     transform: rotate(-45deg);
     top: 0;
   }
+
+  /* Mobile code block adjustments */
+  .main-content pre {
+    font-size: 0.75rem;
+    line-height: 1.2;
+    padding: 0.5rem;
+  }
+
+  .main-content code {
+    font-size: 0.75em;
+  }
 }
