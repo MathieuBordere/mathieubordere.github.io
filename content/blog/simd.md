@@ -56,7 +56,7 @@ then reads a chunk of data, and as long as there is data to read, it loads 256
 bits of the data at L21 and compares the data with the buffer of newlines using
 `_mm256_cmpeq_epi8`. This sets the corresponding elements of the matches buffer to all
 1's in case a data byte is a newline or all 0's if it's not. It then transforms the `__m256i` fields
-containing 32 1's to fields containing just a single 1 using `_mm256_movemask_epi8` and then counts
+containing 8 1's to fields containing just a single 1 using `_mm256_movemask_epi8` and then counts
 the number of set bits using `__builtin_popcount`.
 
 That's it! The remainder is some accounting when there's leftover data that is
