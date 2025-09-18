@@ -62,11 +62,12 @@ body {
 .main-content code {
   font-family: 'Courier New', Courier, monospace;
   background: #f3f4f6;
-  padding: 0.2rem 0.4rem;
+  padding: 0 0.3rem;
   border-radius: 4px;
   font-size: 0.875em;
   color: #6366f1;
   border: 1px solid #e5e7eb;
+  line-height: 1.2;
 }
 
 .main-content pre code {
