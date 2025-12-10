@@ -9,6 +9,12 @@ simple, friendly chat.
 
 In my free time I study Mathematics at UGent.
 
+### PROJECTS
+
+[kernel-cve](https://kernelcve.com): kernel-cve is a website that tracks all
+CVEs assigned to every Linux Kernel version since v2.6.12. It is updated daily
+with the last known information from the official Linux Kernel sources.
+
 ### VAT
 BE0761533736
 
