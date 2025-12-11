@@ -9,8 +9,8 @@ In hindsight, this makes total sense of course, as the codebase evolves,
 patches get harder and harder to apply and there are only so many hands working on
 the maintenance of the Linux Kernels.
 
-As I'm surely not the only that is or was surprised by this, I've decided to
-try to make this fact more visible by creating a database of all Linux Kernel versions since
+As I'm surely not the only one that is or was surprised by this, I've decided to
+try to make this more visible by creating a database of all Linux Kernel versions since
 2.6.12 and all the CVEs that are currently assigned to them. You can find the
 result at [kernelcve.com](https://kernelcve.com).
 
